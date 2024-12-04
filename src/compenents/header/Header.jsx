@@ -13,7 +13,8 @@ const Header = () => {
 
   // TOGGLE MENU
   const [Toggle, showMenu] = useState(true);
-  const [clollapseNavLink, isclollapseNavLink]= useState(false);
+  
+
 
   return (
     <header className="header scrolled">
@@ -24,26 +25,26 @@ const Header = () => {
 
           <ul className="nav__list grid">
 
-            <li className="nav__item">
+            <li className="nav__item" onClick={() => showMenu(!Toggle)}>
               <a href="#home" className="nav__link">
                 Home
               </a>
             </li>
 
-            <li className="nav__item">
+            <li className="nav__item" onClick={() => showMenu(!Toggle)}>
               <a href="#source" className="nav__link">
                 Source
               </a>
             </li>
 
-            <li className="nav__item">
+            <li className="nav__item" onClick={() => showMenu(!Toggle)}>
               <a href="#gallery" className="nav__link">
                 Gallery
               </a>
             </li>
 
 
-            <li className="nav__item">
+            <li className="nav__item" onClick={() => showMenu(!Toggle)}>
               <a href="#about" className="nav__link">
                 About
               </a>
@@ -51,7 +52,7 @@ const Header = () => {
 
 
 
-            <li className="nav__item">
+            <li className="nav__item" onClick={() => showMenu(!Toggle)}>
               <a href="#contact-us" className="nav__link">Contact Us</a>
             </li>
           </ul>
