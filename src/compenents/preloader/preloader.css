@@ -1,0 +1,51 @@
+.preloader{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1{
+    text-align: center;
+  }
+
+  img{
+    width: 100px;
+    height: 100px;
+    mix-blend-mode:hard-light;
+    animation: rotate 500ms;
+    
+}
+}
+
+
+
+@keyframes rotate{
+    0%{
+        transform: scale(.5);
+        
+    }
+    25%{
+        transform: scale(1);
+       
+    }
+    50%{
+        transform: scale(.5);
+    }
+    75%{
+        transform: .8;
+        
+    }
+    100%{
+        transform: scale(1.2);
+    }
+}
+.logo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 105px;
+    height: 105px;
+    border-radius: 150px;
+    background: var(--color-title);
+}
